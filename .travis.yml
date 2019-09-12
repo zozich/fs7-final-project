@@ -11,3 +11,4 @@ cache:
 
 script:
   - mvn clean test
+  - npm run build --prefix client

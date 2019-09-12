@@ -14,7 +14,7 @@ function App() {
         <h2>Learn React</h2>
       </header>
     </div>
-  );
+
 }
 
 export default App;
