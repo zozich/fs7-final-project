@@ -1,2 +1,29 @@
 server:
   port: 9000
+
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:h2:mem:final-project-preparation
+    username: root
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+---
+
+spring:
+  profiles: dev
+  datasource:
+    url:jdbc://mysql:...
+
+---
